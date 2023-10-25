@@ -1,0 +1,4 @@
+.env/
+.DS_STore
+__pycache__
+instance/

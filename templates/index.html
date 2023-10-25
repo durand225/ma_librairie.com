@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="{{url_for('static', filename= 'css/style.css')}}"> 
+</head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript.js" src="lightslider.js"></script> 
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo">Ma Librairie.com </li>
+            <div class=" items">
+                <li><a href="">Acceuil</a></li>
+                <li><a href="#">Librairie</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">S'inscrire</a></li>
+            </div>
+            <li class="search-icon">
+                <input type="search" placeholder="search">
+               <label class="icon">
+                <span class="fas fa-search"></span>
+               </label>
+            </li>
+        </ul>
+    </nav>
+               <!-- message de binvenue -->
+    <div class="content">
+        <h1>Bienvenue <br><span>sur</span> <br>Ma Librairie.com </h1>
+        <p class="par">Ma Librairie.com est un site de vente et achats de livre basé <br>
+        sur les model de cuisine les tendance au plus encienne,<br>nous vous offront une game de produit que vous ne regreterer pas </p>
+
+        <button class="cn"><a href="#">JOIN US</a></button>
+    </div> 
+    
+    <!-- creation d'un login -->
+
+    <div class="form">
+        <h2>se connectez</h2>
+        <input type="email" name="email" placeholder="entré Email">
+        <input type="Mot de passe" name="Mot de passe" placeholder="entré mot de passe">
+        <button class="login"><a href="#">connexion</a></button>
+
+        <p class="link">pas de compte ?</p>
+        <!-- <a href="#">crée en un ici</a> -->
+        <!-- <p class="liw">log in with</p> -->
+    </div>
+
+    <!-- les livres -->
+    <div class="gallery-wrap">
+        <img src="{{url_for('static', filename= 'image/gauche.png')}}" id="backBtn">
+        <div class="gallery">
+            <div>
+                <span><img src="{{url_for('static', filename= 'image/cuisinf.jpeg')}}" alt=""></span>
+                <span><img src="{{url_for('static', filename= 'image/cuisinf.jpeg')}}" alt=""></span>
+                <span><img src="{{url_for('static', filename= 'image/cuisine.jpeg')}}" alt=""></span>
+            </div>
+            <div>   
+               <span><img src="{{url_for('static', filename= 'image/desin.jpeg')}}" alt=""></span>
+               <span><img src="{{url_for('static', filename= 'image/desin.jpeg')}}" alt=""></span>
+               <span><img src="{{url_for('static', filename= 'image/image3d.jpeg')}}" alt=""></span>
+            </div>
+        </div> 
+        <img src="{{url_for('static', filename= 'image/gauche.png')}}" id="nextBtn">
+    </div>
+    <script>
+        let scrollContainer = document.querySelector(".gallery")
+        let backBtn = document.getElementById("backBtn")
+        let nextBtn = document.getElementById("nextBtn")
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+
+        });
+
+        nextBtn.addEventListener("click", () =>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 900;
+        });
+
+        backBtn.addEventListener("click", () =>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 900;
+        });
+    </script> 
+<!-- les diffrents articles et leur prix -->
+    <div class="boka">
+        <div class="contenaire">
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="carte">
+                        <p class="sneakers">CUISINE A VIVRE</p>
+                        <img src="{{url_for('static', filename= 'image/deco1.jpeg')}}" class="modele" >
+                    </div>
+                    <div class="detail">
+                        <h1>1500fcfa</h1>
+                        <p>Livre de cuisine <strong>MAG</strong></p>
+                        <a href="https://wa.me/+225 0160281098"></a>
+                    </div>
+                 </div>
+            </li>
+         </ul>
+         <div class="contenaire">
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="carte">
+                        <p class="sneakers">CUISINE A VIVRE</p>
+                        <img src="{{url_for('static', filename= 'image/deco2.webp')}}" class="modele" >
+                    </div>
+                    <div class="detail">
+                        <h1>1500fcfa</h1>
+                        <p>Livre de cuisine <strong>MAG</strong></p>
+                        <a href="https://wa.me/+225 0160281098"></a>
+                    </div>
+                 </div>
+            </li>
+         </ul>
+         <div class="contenaire">
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="carte">
+                        <p class="sneakers">VINTAGE</p>
+                        <img src="{{url_for('static', filename= 'image/deco3.jpg')}}" class="modele" >
+                    </div>
+                    <div class="detail">
+                        <h1>1500fcfa</h1>
+                        <p>Livre de cuisine <strong>MAG</strong></p>
+                        <a href="https://wa.me/+225 0160281098"></a>
+                    </div>
+                 </div>
+            </li>
+         </ul>
+         <div class="contenaire">
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                    <div class="carte">
+                        <p class="sneakers">100 IDEE DE CUISINE</p>
+                        <img src="{{url_for('static', filename= 'image/deco2.webp')}}" class="modele" >
+                    </div>
+                    <div class="detail">
+                        <h1>1500fcfa</h1>
+                        <p>Livre de cuisine <strong>MAG</strong></p>
+                        <a href="https://wa.me/+225 0160281098"></a>
+                    </div>
+                 </div>
+            </li>
+         </ul>
+        </div>
+    <script src="script.js" type="text/javascript"></script>
+
+    <!--  le footer -->
+
+    <footer>
+        <div class="footer_main">
+            <!-- <div class="tag">
+                 <img src="{{url_for('static', filename= 'image/deco3.jpg')}}">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus hic nobis quasi 
+                    asperiores rem numquam quaerat aliquid culpa magnam cum corrupti, deserunt doloremque 
+                    dicta recusandae totam veritatis delectus minima laborum!
+                </p>
+            </div> -->
+            <div class="tag">
+                <h1>quiz link</h1>
+                <a href="#">Acceuil</a>
+                <a href="#">Librairie</a>
+                <a href="#">Login</a>
+                <a href="#">S'inscrire</a>
+            </div>
+            <div class="tag">
+                <h1>contact</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+225 0160281098</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+225 0160281098</a>
+                <a href="#"><i class="fa-sharp fa-solid fa-envelope">Ma librairie225@gmail.com</i></a> 
+            </div>
+            <div class="tag">
+                <h1>Folow Us</h1>
+                <div class="social_link">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="tag">
+                <h1>newlestter</h1>
+                <div class="social_link">
+                   <div class="search_bar">
+                    <input type="text" placeholder="entre ton email">
+                    <button type="submit">Suscribe</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <p class="end">Design By <span><i class="fa-solid fa-face-grin-wide"></i>Ma Librairie.com</span></p>
+    </footer>
+
+
+
+
+</body> 
+</html>
