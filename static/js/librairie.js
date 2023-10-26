@@ -1,7 +1,7 @@
 const product = [
     {
         id : 0,
-        image: 'image/deco1.jpg',
+        image: 'image/1.jpg',
         title: ' sac nike',
         price: 25.00,
     },

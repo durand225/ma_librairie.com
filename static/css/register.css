@@ -1,3 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,14 +55,14 @@
 
 
 body{
-    background: rgb(186, 230, 241);
+    background: rgb(242, 179, 130);
 }
 
 .wrapper{
     width: 330px;
     padding: 2rem 1rem;
     margin: 50px auto;
-    background-color:  rgb(184, 228, 245);
+    background-color:  rgb(236, 199, 118);
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 20px 35px rgba(77, 81, 82, 0.908);
@@ -46,7 +94,7 @@ button{
     width: 30%;
     color: aliceblue;
     cursor: pointer;
-    background: rgb(17, 107, 143);
+    background: rgb(140, 245, 126);
 }
 
 button:hover{
@@ -100,7 +148,7 @@ input:focus{
 .container{
     margin-left: 35%;
     margin-top: 15%;
-}
+} 
 
 
 

@@ -1,3 +1,152 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #040404;
+}
 
+
+nav{
+    background: rgb(11, 126, 22);
+    padding: 10px 40px 10px 70px;
+    /* border: 1px solid red; */
+    border-left: none;
+    border-right: none;
+
+}
+
+.logo{
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li.logo{
+    flex: 1;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+nav ul div.items{
+    padding: 0 25px;
+    display: inline-flex;
+}
+
+nav ul div.items a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+nav ul div.items a:hover{
+    color: rgb(244, 144, 6);
+
+}
+
+nav ul .search-icon{
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #cb7109;
+    border-radius: 5px;
+}
+
+nav ul .search-icon input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #0f0e0e;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+nav ul .search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 0 5px 5px;
+    cursor: pointer;
+}
+
+nav ul .search-icon .icon:hover{
+    background: rgb(255, 145, 0);
+}
+nav ul .search-icon .icon span{
+    color: #f6f2f2;
+    font-size: 18px;
+}
+
+.items li a{
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #f6f3f3;
+    color: #04691a;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Styles pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .profile, .bio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.profile, .bio {
+    background-color: #f4c887;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(241, 148, 41, 0.831);
+}
+
+.profile img {
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+
+}
+
+footer {
+    background-color: #f1ac36;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 206px;
+  
+}
 
 

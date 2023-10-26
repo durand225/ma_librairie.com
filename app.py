@@ -29,17 +29,22 @@ with app.app_context():
 def index():
     return render_template('index.html')
 
+@app.route('/monprofil')
+def profil():
+    return render_template('profil.html')
+
+@app.route('/librairie')
+def librairie():
+    return render_template('librairie.html')
+
+
 # creation de la base de donnée de l'utilisateur
-
-
 @app.route('/register',methods=['GET','POST'])
 def register():
     if request.method == 'POST':
         name = request.form['name']
         email= request.form['email']
         password = request.form['password']
-
-
         new_user =  User(name=name,email=email,password=password)
         db.session.add(new_user)
         db.session.commit()

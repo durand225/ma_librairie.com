@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/profil.css')}}"> 
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="logo">Ma Librairie.com </li>
+            <div class=" items">
+                <li><a href="/">Acceuil</a></li>
+                <li><a href="/monprofil">mon profil</a></li>
+                <li><a href="/librairie">Librairie</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">S'inscrire</a></li>
+            </div>
+            <li class="search-icon">
+                <input type="search" placeholder="search">
+               <label class="icon">
+                <span class="fas fa-search"></span>
+               </label>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Mon Profil</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <section class="profile">
+                <img src="{{url_for('static', filename= 'image/img1.jpg')}}" alt="Photo de profil">
+                <h2>Nom Prénom</h2>
+                <p>Âge : 30 ans</p>
+                <p>Email : nom@email.com</p>
+            </section>
+            
+            <section class="bio">
+                <h2>À propos de moi</h2>
+                <p>Je suis un passionné de technologie et de programmation. J'adore créer des sites web et des applications mobiles. En dehors de la programmation, j'aime voyager et découvrir de nouvelles cultures.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Mon Profil</p>
+
+        </div>
+    </footer>
+</body>
+</html>

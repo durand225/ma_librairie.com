@@ -25,6 +25,14 @@ nav ul{
     justify-content: center;
 }
 
+
+.fran{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
 nav ul li.logo{
     flex: 1;
     font-size: 30px;
@@ -139,7 +147,7 @@ body{
    justify-content: center;
    margin: 10% auto;
    margin-left: 40%;
-   margin-top: 150px;
+   margin-top: 220px;
    
 
 }
@@ -156,17 +164,17 @@ body{
     transform: scale(1.1);
 }
 
-.content{
+ .content{
     width: 1200px;
     height: auto;
     margin: auto;
     color: rgb(245, 234, 234);
     position: relative;
-}
+} 
 
 .content .par{
-    padding-left: 20px;
-    padding-bottom: 25px;
+    /* padding-left: 20px;
+    padding-bottom: 25px; */
     font-family: Arial;
     letter-spacing: 1.2px;
     line-height: 30px;
@@ -175,7 +183,7 @@ body{
 .content h1{
     font-family: 'Times New Roman';
     font-size: 50px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     margin-top: 9%;
     letter-spacing: 2px;
 }
@@ -213,8 +221,8 @@ body{
     height: 380px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%,rgba(0, 0, 0, 0.8)50%);
     position: absolute;
-    top: 140px;
-    left: 870px;
+    top: 155px;
+    left: 1100px; 
     border-radius: 10px;
     padding: 25px;
 }
@@ -401,6 +409,11 @@ a{
 
 .boka{
     display: flex;
+    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
 }
 
 .footer{
@@ -485,8 +498,6 @@ footer .footer_main .tag .search-bar button{
     cursor: pointer;
     border-radius: 25px;
 
-
-
 }
 
 footer .end{
@@ -504,6 +515,79 @@ footer .end span{
     margin-left: 10px;
 }
 
+ /* @media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav .search-icon {
+        display: none;
+    }
+
+    nav .logo {
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .form {
+        text-align: center;
+    }
+
+    .gallery-wrap {
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .gallery-wrap img {
+        display: none;
+    }
+
+    .gallery-wrap .gallery {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .boka .contenaire {
+        text-align: center;
+    }
+
+    .boka .contenaire ul {
+        width: auto;
+    }
+
+    .boka .contenaire .item-a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .boka .contenaire .detail h1 {
+        font-size: 16px;
+    }
+
+    .boka .contenaire .detail p {
+        font-size: 12px;
+    }
+
+    .footer_main .tag {
+        text-align: center;
+    }
+
+    .social_link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .search_bar {
+        text-align: center;
+    }
+}  
 
 
 
