@@ -38,6 +38,14 @@ def librairie():
     return render_template('librairie.html')
 
 
+@app.route('/payment')
+def buynew():
+    return render_template('payment.html')
+
+
+
+
+
 # creation de la base de donnée de l'utilisateur
 @app.route('/register',methods=['GET','POST'])
 def register():
